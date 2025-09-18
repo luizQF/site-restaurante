@@ -20,8 +20,12 @@ header {
 }
 .logo { font-size: 28px; font-weight: bold; }
 .logo span { color: #f77f00; }
+nav {
+  display: flex; gap: 20px;
+}
 nav a {
-  margin-left: 20px; color: #fff; text-decoration: none; transition: 0.3s;
+  color: #fff; text-decoration: none; transition: 0.3s;
+  
 }
 nav a:hover { color: #f77f00; }
 nav .btn {
@@ -31,9 +35,10 @@ nav .btn {
 }
 nav .btn:hover { background: #f77f00; color: #fff; }
 
+
 /* HERO - > Seção heroíca do site, primeiro conteudo em destaque. :D*/
 .hero {
-  background: url("src_imgs/pexels-sydney-troxell-223521-708587\ \(1\).jpg") center/cover no-repeat;
+  background: url("src_imgs/fundo_heroico.jpg") center/cover no-repeat;
   height: 90vh; display: flex; align-items: center; justify-content: center;
   text-align: center; padding: 0 20px; margin-top: 70px; color: #fff;
 }
@@ -48,13 +53,13 @@ nav .btn:hover { background: #f77f00; color: #fff; }
 }
 .btn-hero:hover { transform: scale(1.05); }
 
-/* SEÇÕES -> É como se fosse uma revista dividida em blocos cada um com sua categoria */
+/* SEÇÕES */
 section { padding: 60px 10%; }
 h2 {
   text-align: center; font-size: 32px; margin-bottom: 20px; color: #d62828;
 }
 
-/* CARDÁPIO -> layout do cardapio*/
+/* CARDÁPIO */
 .grid {
   display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
@@ -75,11 +80,11 @@ h2 {
 .card:hover { transform: translateY(-8px); box-shadow: 0 6px 18px rgba(0,0,0,0.15); }
 .card button:hover { background: #f77f00; }
 
-/* FORMULÁRIO -> formulario para envio de dados para tratamento com banco de dados*/
+/* FORMULÁRIO */
 form {
   max-width: 600px; margin: auto; display: flex; flex-direction: column;
 }
-form input, form select {
+form input, form select, form textarea {
   margin-bottom: 15px; padding: 12px; border: 1px solid #ccc; border-radius: 6px;
 }
 form button {
