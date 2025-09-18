@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Delícias Express – Pedido Online</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container header-content">
+      <span class="logo">Delícias <span>Express</span></span>
+      <nav>
+        <a href="#menu">Cardápio</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+        <a href="#pedido" class="btn">Fazer Pedido</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Sabor que chega rápido</h1>
+      <p>Peça online e receba no conforto da sua casa.</p>
+      <a href="#menu" class="btn-hero">Ver Cardápio</a>
+    </div>
+  </section>
+
+  <section class="menu" id="menu">
+    <div class="container">
+      <h2>Nosso Cardápio</h2>
+      <div class="grid">
+        <div class="card">
+          <img src="img/hotdog.jpg" alt="Cachorro-quente">
+          <h3>Cachorro-quente</h3>
+          <p>Pão, salsicha, purê, molho especial.</p>
+          <button>Peça Agora</button>
+        </div>
+        <div class="card">
+          <img src="img/pizza.jpg" alt="Pizza">
+          <h3>Pizza Margherita</h3>
+          <p>Mussarela, tomate, manjericão.</p>
+          <button>Peça Agora</button>
+        </div>
+        <div class="card">
+          <img src="img/hamburguer.jpg" alt="Hambúrguer">
+          <h3>Hambúrguer Artesanal</h3>
+          <p>Pão brioche, carne premium, cheddar.</p>
+          <button>Peça Agora</button>
+        </div>
+        <div class="card">
+          <img src="img/sobremesa.jpg" alt="Sobremesa">
+          <h3>Sobremesa Especial</h3>
+          <p>Brownie com sorvete de creme.</p>
+          <button>Peça Agora</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sobre" id="sobre">
+    <div class="container">
+      <h2>Sobre Nós</h2>
+      <p>Somos a Delícias Express, trazendo sabor e rapidez. Com ingredientes selecionados e atendimento especial, fazemos seu pedido chegar sempre fresquinho.</p>
+    </div>
+  </section>
+
+  <section class="contato" id="contato">
+    <div class="container">
+      <h2>Contato / Pedido Rápido</h2>
+      <form id="pedido">
+        <input type="text" placeholder="Seu nome" required>
+        <input type="text" placeholder="Endereço" required>
+        <input type="tel" placeholder="Telefone" required>
+        <select required>
+          <option value="">Escolha o item</option>
+          <option value="hotdog">Cachorro-quente</option>
+          <option value="pizza">Pizza Margherita</option>
+          <option value="hamburguer">Hambúrguer Artesanal</option>
+          <option value="sobremesa">Sobremesa Especial</option>
+        </select>
+        <button type="submit">Enviar Pedido</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Delícias Express. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
